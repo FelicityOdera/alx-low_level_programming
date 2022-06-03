@@ -1,17 +1,17 @@
 #include <stdio.h>
-#include <ctype.h>
 /**
- * main - Emtry point
+ * main - Entry point
  * Description: Print the given instructions
  * Return: 0
 */
 int main(void)
 {
-char alphabets;
-for (alphabets = 'a'; alphabets <= 'z'; alphabets++)
-{
-putchar(alphabets);
-}
-putchar('\n');
+char i;
+for (i = 'a'; i <= 'z'; i++)
+	putchar(i);
+for (i = 'A'; i <= 'Z'; i++)
+	putchar(i);
+	putchar('\n');
 return (0);
 }
+
