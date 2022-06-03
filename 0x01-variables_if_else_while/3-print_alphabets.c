@@ -1,17 +1,22 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Description: Print the given instructions
+ * Description: Print the given statement
  * Return: 0
 */
 int main(void)
 {
-char i;
-for (i = 'a'; i <= 'z'; i++)
-	putchar(i);
-for (i = 'A'; i <= 'Z'; i++)
-	putchar(i);
-	putchar('\n');
-return (0);
+char x;
+
+for (x = 'a'; x <= 'z'; x++)
+{
+	putchar(x);
 }
 
+for (x = 'A'; x <= 'Z'; x++)
+{
+	putchar(x);
+}
+putchar('\n');
+return (0);
+}
