@@ -6,21 +6,41 @@
 */
 int main(void)
 {
-int tens;
-int ones;
-for (tens = 0; tens <= 9; tens++)
+int i = 48, j = 48, y = 48, z = 49;
+while (i < 58)
 {
-for (ones = 0; ones <= 9; ones++)
-{
-	putchar(tens + '0');
-	putchar(ones + '0');
-
-	if (!(tens == 9 && ones == 9))
+	while (j < 58)
 	{
-		putchar(',');
-		putchar(' ');
+		while (y < 58)
+		{
+			while (z < 58)
+			{
+				putchar(i);
+				putchar(j);
+				putchar(' ');
+				putchar(y);
+				putchar(z);
+				if (!(i == 57 &&
+					j == 56 &&
+					y == 57 &&
+					z == 57))
+				{
+					putchar(',');
+					putchar(' ');
+				}
+				z++;
+			}
+			y++;
+			z = 48;
+		}
+		j++;
+		y = i;
+		z = j + 1;
 	}
-}
+	i++;
+	j = 48;
+	y = i;
+	z = j + 1;
 }
 putchar('\n');
 return (0);
