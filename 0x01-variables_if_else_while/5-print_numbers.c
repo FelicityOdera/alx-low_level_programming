@@ -1,14 +1,16 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Description: Print the given instructions
+ *
  * Return: 0
 */
 int main(void)
 {
-char i;
-for (i = 'a'; i <= 'z'; i++)
-putchar(i);
+int digit;
+for (digit = 0; digit < 10; digit++)
+{
+	printf("%i", digit);
+}
 putchar('\n');
 return (0);
 }

@@ -1,14 +1,16 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Description: Print the given instructions
+ *
  * Return: 0
 */
 int main(void)
 {
-char i;
-for (i = 'a'; i <= 'z'; i++)
-putchar(i);
+char letter;
+for (letter = 'z'; letter >= 'a'; letter--)
+{
+	putchar(letter);
+}
 putchar('\n');
 return (0);
 }
