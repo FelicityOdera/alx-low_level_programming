@@ -5,18 +5,14 @@
  *
  * Return: 0
  */
-
 int main(void)
 {
-int i, x = 612852475143;
-for (i  = 2; i <= x; i++)
+unsigned long int i, n = 612852475143;
+for (i = 3; i < 782849; i = i + 2)
 {
-	if (x % i == 0)
-	{
-		x = x / i;
-		x--;
-	}
+	while ((n % i == 0) && (n != i))
+		n = n / i;
 }
-printf("%lu\n", i);
+printf("%lu\n", n);
 return (0);
 }
