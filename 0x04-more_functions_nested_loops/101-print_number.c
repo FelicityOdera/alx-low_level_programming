@@ -6,19 +6,26 @@ include "main.h"
 
 void print_number(int n)
 {
-unsigned int n1;
-if (n < 0)
+int copy, nth, size = 1, ones = n % 10;
+copy = n;
+if (ones < 0)
 {
-	n1 = -n;
+	ones *= -1, copy *= -1, n *= -1;
 	_putchar('-');
 }
-else
+if (copy > 0)
 {
-	n1 = n;
+	while (copy / 10 != 0)
+	{
+		copy /= 10, size *= 10;
+	}
+	while (size > 0)
+	{
+		nth = n / size;
+		_putchar('0' + nth);
+		n -= nth * size;
+		size /= 10;
+	}
 }
-if (n1 / 10)
-{
-	print_number(n1 / 10);
-}
-_putchar((n1 % 10) + '0');
+_putchar('0' + ones);
 }
