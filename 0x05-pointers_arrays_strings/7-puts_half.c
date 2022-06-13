@@ -10,9 +10,9 @@ int len = 0;
 char *x = str;
 int n;
 
-while (*y != '\0')
+while (*x != '\0')
 {
-	y++;
+	x++;
 	len++;
 }
 if (len % 2 == 0)
