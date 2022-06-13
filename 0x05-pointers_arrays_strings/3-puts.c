@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <unistd.h>
 /**
  * _puts - Function that prints a string, followed by a new line
  * @str: value to be evaluate
