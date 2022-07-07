@@ -1,7 +1,6 @@
-#include "variadic_functions.h"
 #include <stdio.h>
-#include <stdarg.h>
 #include <stdlib.h>
+#include "variadic_functions.h"
 /**
  * print_i - prints int
  * @list: arguement of list
@@ -25,7 +24,7 @@ void print_c(va_list list, char *sep)
  * print_s - prints string
  * @sep: seperator
  * @list: list to print
- * Return: 0
+ * Return: none
  */
 void print_s(va_list list, char *sep)
 {
@@ -39,7 +38,7 @@ printf("%s%s", sep, s);
  * print_f - prints floats
  * @sep: float to print
  * @list: next arguement of list to print
- * Return: 0
+ * Return: none
  */
 void print_f(va_list list, char *sep)
 {
