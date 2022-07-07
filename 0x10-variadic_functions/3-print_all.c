@@ -52,7 +52,7 @@ str = va_arg(arg, char *);
 if (str == NULL)
 {
 	printf("(nil)");
-	return;
+	return 0;
 }
 printf("%s", str);
 }
