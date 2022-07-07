@@ -52,7 +52,6 @@ str = va_arg(arg, char *);
 if (str == NULL)
 {
 	printf("(nil)");
-	return (NULL);
 }
 printf("%s", str);
 }
